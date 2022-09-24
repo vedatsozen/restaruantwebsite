@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Web Site</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+<div id="container">
+
+<div id="top">
+
+<h1 class="logo">RESTAURANT</h1>
+<div id="menu">
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#rests">Restaurants</a></li>
+        <li><a href="#">Prices</a></li>
+        <li><a href="#">Contact</a></li>
+    </ul>
+</div>
+
+<img id="square" class="square" src="square.png">
+
+</div>
+
+<div id="slidingmenu">
+    <ul>
+        <li><img id="crossid" src="crosss.png"></li>
+        <li><a href="#">Home</a></li>
+        <li><a href="#firstrest">First Restaurant</a></li>
+        <li><a href="#secondrest">Second Restaurant</a></li>
+        <li><a href="#thirdrest">Third Restaurant</a></li>
+        <li><a href="#forthrest">Forth Restaurant</a></li>
+    </ul>
+</div>
+
+<h1 id="header">ARE YOU READY TO EAT <span>MOST DELICIOUS FOODS</span> IN THE CITY ?</h1>
+
+<a href="#firstrest"><img class="downarrow" src="blackdownarrow.png"></a>
+
+</div>
+
+
+<div id="rests">
+
+<div id="firstrest">
+    <h1>First Restaurant</h1>
+    <h2>Address : Adress 1 </h2>
+    <h3>Telephone : Telephone 1</h3>
+</div>
+
+<div id="secondrest">
+    <h1>Second Restaurant</h1>
+    <h2>Address : Address 2</h2>
+    <h3>Telephone : Telephone 2</h3>
+</div>
+
+<div id="thirdrest">
+    <h1>Third Restaurant</h1>
+    <h2>Address : Address 3</h2>
+    <h3>Telephone : Telephone 3</h3>
+</div>
+
+<div id="forthrest">
+    <h1>Forth Restaurant</h1>
+    <h2>Address : Address 4 </h2>
+    <h3>Telephone : Telephone 4</h3>
+</div>
+
+</div>
+
+<div id="footer">
+    All Rights Reserved. Designed by Vedat Sözen
+</div>
+
+<a href="#top"><img class="uparrow" src="blackdownarrow.png" /></a>
+
+
+
+</body>
+
+<script>
+
+document.getElementById("square").addEventListener("click", function() {
+document.getElementById("slidingmenu").classList.add("slideme");
+document.getElementById("slidingmenu").classList.remove("slidemeback");
+});
+
+document.getElementById("crossid").addEventListener("click", function() {
+document.getElementById("slidingmenu").classList.add("slidemeback");
+document.getElementById("slidingmenu").classList.remove("slideme");
+});
+
+</script>
+
+</html>

@@ -1,0 +1,547 @@
+
+@media only screen and (min-width:480px) {
+
+* {
+    box-sizing: border-box;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#container {
+    background-image: url("restaurants/5.jpg");
+    background-size: cover;
+    background-repeat: no repeat;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+    height:800px;
+}
+
+#top {
+
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 7px;
+}
+
+#menu {
+    height:fit-content;
+    width: fit-content;
+    margin: auto;
+    margin-right: 5px;
+   
+    
+}
+
+h1.logo {
+    margin: auto;
+    margin-left: 5px;
+    color: bisque;
+    padding: 10px;
+    letter-spacing: 5px;
+    font-size: 30px;
+    font-weight: bold;
+    animation: scaleme 3000ms infinite ease-in-out;
+  
+}
+
+#menu ul {
+    list-style: none;
+    height: 100%;
+    width: fit-content;
+    padding: 0;
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    align-items: center;
+    gap:20px;
+}
+
+#menu > ul > li > a {
+    color:bisque;
+    text-decoration: none;
+    font-size: 18px;
+    letter-spacing: 4px;
+
+}
+
+#menu > ul > li > a:hover {
+    
+    cursor: pointer;
+    transition: 300ms ease-in-out;
+    filter: drop-shadow(0 0 30px bisque);
+    color: black;
+}
+h1#header {
+    margin: auto;
+    margin-top:200px;
+    color:black;
+    font-size:70px;
+    text-align: center;
+    width: 80vw;
+    filter:drop-shadow(0 0 10px orangered);
+}
+
+span {
+    color: bisque;
+}
+
+img.downarrow {
+    
+    filter:drop-shadow(0 0 10px orangered);
+    height:38px;
+    width:38px;
+    animation: live 200ms infinite;
+}
+
+
+
+
+@keyframes live {
+    from {
+        transform: translate(0px);
+    }
+    to {
+        transform: translateY(10px);
+    }
+}
+
+@keyframes scaleme {
+    0% {
+        color: bisque;
+    }
+
+    50% {
+        color: black;
+    }
+
+    100% {
+        color: bisque;
+    }
+}
+
+#rests {
+    height: fit-content;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap:0px;
+    margin-top:0px;
+}
+
+#rests > div {
+    height:800px;
+    width: 100%;
+    padding-top: 10px;
+
+}
+
+#rests > div > h1,h2,h3 {
+    font-size: 50px;
+    color: bisque;
+    background-color: black;
+    padding: 5px;
+    letter-spacing: 5px;
+    width: fit-content;
+    height: fit-content;
+    margin: auto;
+}
+
+#rests > div > h2,h3 {
+    font-size: 30px !important;
+    margin-top: 10px;
+}
+#firstrest {
+    background-image: url("restaurants/2.jpg");
+    background-size: cover;
+    background-repeat: no repeat;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+ 
+}
+
+#secondrest {
+    background-image: url("restaurants/3.jpg");
+    background-size: cover;
+    background-repeat: no repeat;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+ 
+}
+
+#thirdrest {
+    background-image: url("restaurants/4.jpg");
+    background-size: cover;
+    background-repeat: no repeat;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+ 
+}
+
+#forthrest {
+    background-image: url("restaurants/6.jpg");
+    background-size: cover;
+    background-repeat: no repeat;
+    font-family: 'Josefin Sans', sans-serif;
+    text-align: center;
+ 
+}
+
+
+
+img.uparrow {
+    position: fixed;
+    top:50%;
+    right: 5px;
+    transform: rotate(180deg);
+}
+
+img.uparrow:hover {
+    cursor: pointer;
+}
+
+#footer {
+    height: 50px;
+    text-align: center;
+    background-color: black;
+    color: bisque;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+img.square {
+    display: none;
+}
+
+#slidingmenu {
+    display: none;
+}
+
+}
+
+/* MOBILE RESPONSIVE DESIGN */
+
+
+@media only screen and (max-width:480px) {
+
+    * {
+        box-sizing: border-box;
+        font-family: 'Josefin Sans', sans-serif;
+        overflow-x: hidden;
+    }
+    
+    html {
+        scroll-behavior: smooth;
+        
+    }
+    
+    body {
+        margin: 0;
+        padding: 0;
+    }
+    
+    #container {
+        background-image: url("restaurants/5.jpg");
+        background-size: cover;
+        background-repeat: no repeat;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+        height:400px;
+        width:100vw;
+    }
+    
+    #top {
+    
+        height: fit-content;
+        width:100vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 7px;
+    }
+    
+    #menu {
+        height:fit-content;
+        width: fit-content;
+        margin: auto;
+        margin-right: 5px;
+        display: none;
+        
+    }
+    
+    h1.logo {
+        margin: auto;
+        margin-left:5px;
+        color: bisque;
+        padding: 10px;
+        letter-spacing: 5px;
+        font-size:1.5rem;
+        font-weight: bold;
+        animation: scaleme 3000ms infinite ease-in-out;
+      
+      
+    }
+    
+    #menu ul {
+        list-style: none;
+        height: 100%;
+        width: fit-content;
+        padding: 0;
+        display: flex;
+        flex-direction:row;
+        justify-content: space-between;
+        align-items: center;
+        gap:20px;
+    }
+    
+    #menu > ul > li > a {
+        color:bisque;
+        text-decoration: none;
+        font-size: 18px;
+        letter-spacing: 4px;
+    
+    }
+    
+    #menu > ul > li > a:hover {
+        
+        cursor: pointer;
+        transition: 300ms ease-in-out;
+        filter: drop-shadow(0 0 30px bisque);
+        color: black;
+    }
+    h1#header {
+        margin: auto;
+        margin-top:90px;
+        color:black;
+        font-size:2rem;
+        text-align: center;
+        width: 80vw;
+        filter:drop-shadow(0 0 10px orangered);
+    }
+    
+    span {
+        color: bisque;
+    }
+    
+    img.downarrow {
+        
+        filter:drop-shadow(0 0 10px orangered);
+        height:38px;
+        width:38px;
+        animation: live 200ms infinite;
+    }
+    
+    @keyframes live {
+        from {
+            transform: translate(0px);
+        }
+        to {
+            transform: translateY(10px);
+        }
+    }
+    
+    @keyframes scaleme {
+        0% {
+            color: bisque;
+        }
+    
+        50% {
+            color: black;
+        }
+    
+        100% {
+            color: bisque;
+        }
+    }
+    
+    #rests {
+        height: fit-content;
+        width:100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap:0px;
+        margin-top:0px;
+    }
+    
+    #rests > div {
+        height:300px;
+        width:100%;
+        padding-top: 10px;
+    
+    }
+    
+    #rests > div > h1,h2,h3 {
+        font-size: 20px;
+        color: bisque;
+        background-color: black;
+        padding: 5px;
+        letter-spacing: 5px;
+        width: fit-content;
+        height: fit-content;
+        margin: auto;
+    }
+    
+    #rests > div > h2,h3 {
+        font-size:15px !important;
+        margin-top: 10px;
+    }
+
+    #rests > div > img {
+        width:100%;
+    }
+    #firstrest {
+        background-image: url("restaurants/2.jpg");
+        background-size: cover;
+        background-repeat: no repeat;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+     
+    }
+    
+    #secondrest {
+        background-image: url("restaurants/3.jpg");
+        background-size: cover;
+        background-repeat: no repeat;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+     
+    }
+    
+    #thirdrest {
+        background-image: url("restaurants/4.jpg");
+        background-size: cover;
+        background-repeat: no repeat;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+     
+    }
+    
+    #forthrest {
+        background-image: url("restaurants/6.jpg");
+        background-size: cover;
+        background-repeat: no repeat;
+        font-family: 'Josefin Sans', sans-serif;
+        text-align: center;
+     
+    }
+    
+    
+    
+    img.uparrow {
+        position: fixed;
+        top:50%;
+        right: 5px;
+        transform: rotate(180deg);
+        
+    }
+    
+    img.uparrow:hover {
+        cursor: pointer;
+    }
+    
+    #footer {
+        height: 50px;
+        width: 100vw;
+        text-align: center;
+        background-color: black;
+        color: bisque;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+
+    img.square {
+        margin: auto;
+        margin-right:10px;
+        height: 40px;
+        width: 40px;
+        cursor: pointer;
+        background-color: bisque;
+        border:1px solid bisque;
+        border-radius: 3px;
+    }
+
+    img.square:hover {
+        cursor: pointer;
+        box-shadow: 0 0 20px black;
+       
+    }
+    
+    #slidingmenu {
+        margin: auto;
+        margin-top: 0px;
+        position: absolute;
+        height: fit-content;
+        width:100vw;
+        transform: translateX(-1000px);
+        z-index:100;
+        padding:0px;
+        background-color:black;
+        
+    }
+
+    #slidingmenu > ul {
+        list-style: none;
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        gap:5px;
+        padding: 0;
+    }
+
+    #slidingmenu > ul > li:nth-child(1) {
+        background-color: bisque;
+        color:black;
+        width: fit-content;
+        border-radius: 50%;
+    }
+
+    #slidingmenu > ul > li > a {
+        color: bisque;
+        text-decoration: none;
+        font-size:20px;
+    }
+
+    #slidingmenu.slideme {
+        transform: translateX(0px);
+    }
+    
+    #slidingmenu.slidemeback {
+        transform: translateX(-1000px);
+    }
+
+    img#cross {
+        margin: auto;
+        margin-right: 5px;
+        margin-top: 0px;
+        cursor: pointer;
+        height:100%;
+        width:auto;
+        padding: 0;
+        text-align: right;
+        position: absolute;
+    }
+
+    }
